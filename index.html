@@ -33,18 +33,18 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <!--(borró lo q estaba antes) ms- auto permite que tu nav se posicione al final de la barra-->
+                        <!--ms- auto permite que tu nav se posicione al final de la barra-->
                         <li class="nav-item">
                             <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Quiénes somos</a>
+                            <a class="nav-link text-light" href="#quienesSomos">Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Destacados</a>
+                            <a class="nav-link text-light" href="#Destacados">Destacados</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contacto</a>
+                            <a class="nav-link text-light" href="#Contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -79,39 +79,37 @@
 
     <!--SECCIÓN QUIÉNES SOMOS CON ICONS DE FONT AWESOME-->
     <section id="quienesSomos">
-        <div class="container">
-            <div class="titulo">
+        <div class="container p-5">
                 <h1 class="text-center text-light">¿QUIÉNES SOMOS?</h1>
-            </div>
-            <hr> <!--El hr se crea para generar una línea horizontal que divide secciones-->
-            <div class="row align-items-start">
+            <hr class="text-light"> <!--El hr se crea para generar una línea horizontal que divide secciones-->
+            <div class="row align-items-start"> <!--d-sm-md-none no me resulta debo hacer que desaparezca esta sección en tamaños pequeños-->
                 <div class="col-sm-12 col-lg-4">
                     <div class="text-center icon text-bg-info">
-                        <i class="fas fa-plane fa-2x text-light"></i>
+                        <i class="fa-solid fa-plane fa-2x text-light"></i>
                     </div>
-                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
+                    <p class="d-none d-sm-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
                         fuga quae explicabo molestiae at blanditiis maiores modi distinctio ab perferendis beatae
                         minima, iusto vel. Voluptatibus, reiciendis?
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquid excepturi animi nemo?
                         Consequatur architecto voluptatibus magni quam voluptates, soluta reprehenderit dolorem rem ex
                         iusto dignissimos hic nemo deserunt praesentium.</p>
                 </div>
-                <div class="col-sm-12 col-lg-4 column-mobile">
-                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
+                <div class="col-sm-12 col-lg-4">
+                    <p class="d-none d-sm-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
                         fuga quae explicabo molestiae at blanditiis maiores modi distinctio ab perferendis beatae
                         minima, iusto vel. Voluptatibus, reiciendis?
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquid excepturi animi nemo?
                         Consequatur architecto voluptatibus magni quam voluptates, soluta reprehenderit dolorem rem ex
                         iusto dignissimos hic nemo deserunt praesentium.</p>
                     <div class="text-center icon text-bg-info">
-                        <i class="fas fa-mountain fa-2x text-light"></i>
+                        <i class="fa-solid fa-mountain fa-2x text-light"></i>
                     </div>
                 </div>
                 <div class="col-sm-12 col-lg-4">
                     <div class="text-center icon text-bg-info">
-                        <i class="fas fa-route fa-2x text-light"></i>
+                        <i class="fa-solid fa-route fa-2x text-light"></i>
                     </div>
-                    <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
+                    <p class="d-none d-sm-none d-md-block">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, quos id, debitis voluptatibus
                         fuga quae explicabo molestiae at blanditiis maiores modi distinctio ab perferendis beatae
                         minima, iusto vel. Voluptatibus, reiciendis?
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquid excepturi animi nemo?
@@ -123,12 +121,133 @@
     </section>
 
 
+    <!--SECCIÓN TARJETAS H1 TÍTULO -->
+    <section id="Destacados">
+        <div class="container">
+            <div class="titulo2">
+                <h1 class="text-center text-light">DESTACADOS</h1>
+            </div>
+        </div>
+        <hr class="text-light">
+
+        <!--Aquí comienzan tarjetas bootstrap-->
+        <section class="row justify-content-between">
+            <!--Tarjeta 1-->
+            <div class="col-sm-3"> <!--aquí le agregue esa clase col...sacar sino sirve-->
+                <div class="card h-100" style="width: 20rem;"> <!--h-100 misma altura tarjetas-->
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-bg-info ">
+                        <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-light fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nemo
+                            ipsum, rem quos aliquid voluptatum voluptatem quisquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjeta 2 -->
+            <div class="col-sm-3"> <!--aquí le agregue esa clase col...sacar sino sirve-->
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-bg-info ">
+                        <p class="card-text text-light fs-5 ">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-light fs-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nemo
+                            ipsum, rem quos aliquid voluptatum voluptatem quisquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjeta 3 -->
+            <div class="col-sm-3"> <!--aquí le agregue esa clase col...sacar sino sirve-->
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-bg-info ">
+                        <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-light fs-6 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nemo
+                            ipsum, rem quos aliquid voluptatum voluptatem quisquam.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Tarjeta 4 -->
+            <div class="col-sm-3"> <!--aquí le agregue esa clase col...sacar sino sirve-->
+                <div class="card h-100" style="width: 20rem;">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body text-bg-info ">
+                        <p class="card-text text-light fs-5">Lorem ipsum dolor sit amet</p>
+                        <p class="card-text text-light fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nemo
+                            ipsum, rem quos aliquid voluptatum voluptatem quisquam.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--SECCIÓN CONTACTO FORM-->
+    <section id="Contacto">
+        <div class="container">
+            <div class="titulo3">
+                <h1 class="text-center text-light">CONTACTO</h1>
+            </div>
+        </div>
+        <hr class="text-light" />
+        <section class="formulario">
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Asunto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-info text-light">Enviar</button>
+        </section>
+
+    </section>
+    <!--FOOTER FINAL-->
+    <footer>
+        <div class=" container-fluid btn btn-info">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <!--d-flex contenedor flexible/wrap permite envolverlos elementos/justify-content-between especio horizontal entre elementos/ alineación de los elementos al centro, pero verticalmente/ último padding py-3-->
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="footer-text text-light fs-3">VIAJES CHILE</span>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex footer-icons">
+                    <!--list-unstyled listas no ordenadas elimina puntos, etc de lineas desordenadas-->
+                    <li class="ms-3 text-bg-light"><a class="text-muted" target="_blank" href="">
+                            <!--poner link github page-->
+                            <i class="fa-brands fa-github fa-2x"></i></a> <!--fa 2x agrande iconos-->
+                    </li>
+                    <li class="ms-3 text-bg-light"><a class="text-muted" target="_blank"
+                            href="https://www.linkedin.com/">
+                            <i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                    <li class="ms-3 text-bg-light"><a class="text-muted" target="_blank" href="https://twitter.com/">
+                            <i class="fa-brands fa-square-twitter fa-2x"></i></a></li>
+                    <li class="ms-3 text-bg-light"><a class="text-muted" target="_blank"
+                            href="https://www.facebook.com/">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i></a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </footer>
 
 
 
 
-    <script src="https://kit.fontawesome.com/d18f858ae2.js" crossorigin="anonymous"></script>
+
+
+
     <!--Versión 5 fontawesome-->
+    <script src="https://kit.fontawesome.com/d18f858ae2.js" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script> <!--cdn de bootstrap-->
